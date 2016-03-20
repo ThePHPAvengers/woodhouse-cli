@@ -1,0 +1,67 @@
+{
+  "name": "thephpavengers/woodhouse",
+  "type": "library",
+  "description": "Woodhouse the skaggy mcgee man servant, tell him to scaffold your project or make you an eggs Woodhouse, he'll do as you say",
+  "keywords": [ "php","package","psr-2","psr-4","skeleton","scaffolder","phpunit" ],
+  "homepage": "https://github.com/jkirkby91/package-skeleton",
+  "license": "MIT",
+  "authors": [
+    { "name": "James Kirkby", "email": "jkirkby91@gmail.com" }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "kzykhys/git": "0.1.*",
+    "pimple/pimple": "~3.0",
+    "symfony/console": "~2.6",
+    "jkirkby91/balloon": "~1.1.0",
+    "jkirkby91/trex-cli": "~0.1",
+    "jkirkby91/puppy-config": "~1.0",
+    "icanboogie/inflector": "~1.3",
+    "rap2hpoutre/similar-text-finder": "0.1.*"
+  },
+  "require-dev": {
+    "raveren/kint": "^1.0",
+    "phpunit/phpunit": "^4.7",
+    "phpunit/dbunit": ">=1.2",
+    "behat/behat": "dev-master",
+    "phpmd/phpmd": "dev-master",
+    "phpunit/php-invoker": "^1.1",
+    "phploc/phploc": "dev-master",
+    "lox/xhprof": "dev-master@dev",
+    "sebastian/phpcpd": "dev-master",
+    "sebastian/phpdcd": "dev-master",
+    "symfony/event-dispatcher": "~2.6",
+    "squizlabs/php_codesniffer": "dev-master",
+    "phpunit/test-listener-xhprof": "dev-master",
+    "codeclimate/php-test-reporter": "dev-master",
+    "vladahejda/phpunit-assert-exception": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Woodhouse\\": [
+        "src",
+        "tests"
+      ]
+    }
+  },
+  "scripts": {
+    "pu": [
+      "./vendor/bin/phpunit"
+    ],
+    "pu-c": [
+      "./vendor/bin/phpunit --coverage-html coverage"
+    ],
+    "codeSniff": [
+      "phpcs src/*"
+    ],
+    "codeSniffFixer": [
+      "phpcbf src/*"
+    ],
+    "codeClimate": [
+      "phpunit --coverage-clover build/logs/clover.xml"
+    ]
+  },
+  "bin": [
+    "woodhouse"
+  ]
+}

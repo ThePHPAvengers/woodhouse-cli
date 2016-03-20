@@ -1,0 +1,23 @@
+site_name: Woodhouse Documentation
+#site_url: /
+site_description: Woodhouse - A PHP scaffolding tool.
+#site_favicon: img/favicon.png
+
+repo_url: https://github.com/ThePHPAvengers/Woodhouse/
+
+docs_dir: doc/user-guide
+
+include_search: true
+
+use_absolute_urls: true
+
+copyright: Copyright &copy; 2015, Woodhouse
+#google_analytics: ['UA-xxx', 'website']
+
+pages:
+
+- 'About': 'index.md'
+- 'Installation' : 'installation.md'
+- 'Scaffolding': 'scaffolding.md'
+- 'Aliases': 'aliases.md'
+- 'Modules': 'modules.md'

@@ -1,0 +1,8 @@
+{
+  "lib": {
+    "name": "ThePHPAvengers PSR-4 Skeleton Package",
+    "description": "A fully PSR-2/4 compliant skeleton package for building packages",
+    "package": "ThePHPAvengers/psr4Skeleton",
+    "version": ""
+  }
+}

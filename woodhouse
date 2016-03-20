@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+(@include_once __DIR__ . '/vendor/autoload.php');
+
+set_include_path(get_include_path() . PATH_SEPARATOR . __DIR__);
+
+$Woodhouse = new Woodhouse\Woodhouse(new \Symfony\Component\Console\Application());
+$Woodhouse->run();
